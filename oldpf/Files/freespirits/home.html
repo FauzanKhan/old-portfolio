@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Free Spirits - Bridging the gap between you and technology</title>
+<link href="files/freespirits.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="files/jquery183.js"></script>
+<script type="text/javascript" src="files/scrolld.js"></script>
+<script type="text/javascript">
+	/*function Slider(){
+		
+		$(".slider #1").show("fade",0);
+		$(".slider #1").delay(5500).hide("slide",{direction:'left'},500);
+		var sc = $(".slider img").size();
+		var count = 2;
+		setInterval(function(){
+			$(".slider #"+count).show("slide",{direction:'right'},500);
+			$(".slider #"+count).delay(5500).hide("slide",{direction:'left'},500);
+			if(count==sc){
+				count=1
+				}
+			else{
+				count = count+1;}
+			},6500);
+		
+		}*/
+		
+	$(document).ready(function(){
+		$(function(){
+			$('.slider img:gt(0)').hide();
+			setInterval(function(){
+			  $('.slider :first-child').fadeOut(2000)
+				 .next('img').fadeIn(2000)
+				 .end().appendTo('.slider');}, 
+			  3000);
+		});
+		/*$('#back_to_top').hide()
+		$(document).scroll(function(){
+			var y = $(this).scrollTop();
+			if (y > 600) {
+				$('#about').slideDown();
+			} else {
+				$('#about').slideUp();
+			}
+			if (y > 100) {
+				$('#back_to_top').fadeIn("slow");
+			} else {
+				$('#back_to_top').fadeOut();
+			}
+			if (y > 900) {
+				$('#members').fadeIn();
+			} else {
+				$('#members').fadeOut();
+			}
+			if (y > 1500) {
+				$('#projects').slideDown();
+			} else {
+				$('#projects').slideUp();
+			}
+			if (y > 5000) {
+				$('#products').fadeIn();
+			} else {
+				$('#products').fadeOut();
+			}
+			
+		});*/
+					/*$('.about').click(function(){
+   				$.scrollTo('#about', 500);
+			});*/
+		$('.name').focus(function(){
+			$(this).css({"background-color" : "#CCCCC"});
+			$(this).css({"border" : "1px solid rgb(64,153,255)"});
+			$(this).css({"box-shadow" : "1px 1px 3px rgb(64,153,255)"});
+		});
+		$('.mail').focus(function(){
+			$(this).css({"background-color" : "#CCCCC"});
+			$(this).css({"border" : "1px solid rgb(64,153,255)"});
+			$(this).css({"box-shadow" : "1px 1px 3px rgb(64,153,255)"});
+		});
+		$('.message').focus(function(){
+			$(this).css({"background-color" : "#CCCCC"});
+			$(this).css({"border" : "1px solid rgb(64,153,255)"});
+			$(this).css({"box-shadow" : "1px 1px 3px rgb(64,153,255)"});
+		});
+		$('.name').blur(function(){
+			$(this).css({"background-color" : "#FFFFF"});
+			$(this).css({"border" : "1px solid #CCC"});
+			$(this).css({"box-shadow" : "1px 1px 1px rgba(64,153,255,.1)"});
+		});
+		$('.mail').blur(function(){
+			$(this).css({"background-color" : "#FFFFF"});
+			$(this).css({"border" : "1px solid #CCC"});
+			$(this).css({"box-shadow" : "0px 0px 3px rgba(64,153,255,.1)"});
+		});
+		$('.message').blur(function(){
+			$(this).css({"background-color" : "#FFFFF"});
+			$(this).css({"border" : "1px solid #CCC"});
+			$(this).css({"box-shadow" : "0px 0px 0px rgba(64,153,255,.1)"});
+		});
+		
+	});
+</script>
+</head>
+
+<body onLoad="Slider()">
+
+	<div id="header">
+        <div id="heading">
+        	<h1><a href="#" title="Home">Free Spirits</a></h1>
+        	<h3>Bridging the gap between you and technology</h3>
+        </div>
+        <div id="menu">
+            <ul>
+                <a href="#about" id="aboutBtn"><li>About</li></a>
+                <a href="#members" id="membersBtn"><li>Members</li></a>
+                <a href="#projects" id="projectsBtn"><li>Projects</li></a>
+                <a href="#products" id="productsBtn"><li>Products</li></a>
+                <a href="#contact" id="contactBtn"><li>Contact</li></a>
+            </ul>
+        </div>        
+    </div>
+	<div id="headerBtn" class="back_to_top"><a href="#header" title="Back to top">h</a></div>
+    <div style="text-align:center">
+    
+    <div id="content">
+    	<!---Content will be diplayed inside this divisor.----->
+    	<div id="welcome"><p style="font-size:54px"><b>Welcome to freeSpirits</b></p><p id="engineers">By <b>Passionate Engineers</b></p></div>
+       <div id="slide_show_container">
+           <div class="slider">
+                <img id="1" src="files/slide-1.jpg" />
+                <img id="2" src="files/slide-2.jpg" />
+                <img id="3" src="files/slide-3.jpg" />
+           </div>
+	   </div>
+    	<div id="wordsfrom">
+        	<div id="director">
+            <img src="files/4.jpg" height="220" width="250" />
+            <p>Director, Nitin Saini</p>
+            </div>
+            <div id="thewords">
+            <p id="few"><b>A few Words from the Director</b></p>
+            <p>Free Spirits is an initiative to a greener world. It aims to innovate products that helps people to save their 		money as well as preserving the conventional sources of energy. A company that encourages the use of products that helps saving electricity and also eliminates the use of non-renewable sources of energy.<br />A huge thanks to Prof. Kumar Krishen for being a guide and a source of inspiration for us.<br />We share a common dream and are on the path of fulfilling it together.We are a group of young engineers who are dedicated to to reduce the gap between technology and you so that one day you could light up your homes for free.</p>
+            </div>
+        </div>
+        <div id="story">
+        <p id="storytitle">A heart touching story during one of our projects</p>
+        <p>In one of the houses where we have installed the solar setup, lives a widow with her 3 children. They didn't have any electricity privilege ever. There was no way to work at nights except for the kerosene lamps. The kids also used to study under the kerosene lamp. Later, after dusk, on a regular check up to test the proper functioning of the system installed, we saw the kids studying in the lamp lightened by solar power. The happiness and the feeling of that family cannot be expressed in words but we would like to relive that happiness again and again.</p>
+        </div>
+		<div id="about">
+			<div id="about_title">About Us</div>
+			<div id="about_content"><p>
+free Spirits is one company that does not believe in developing products and selling them to the market. We have a different view of thinking. We are a group of passionate people who share a common objective, and that is to develop new and amazing applications of renewable energy.<br />
+We are dedicated to remove the gap between technology and common people. We develop products that are strong, rugged and easy to repair.<br />
+free Spirits offers the installation of solar plants utilising Photovoltaic power (PV) in India. We have the know-how, the resources and the project management capabilities needed to develop, construct and operate solar fields for large scale power generation connected to the grid as well as ff grid rooftop applications.<br /></p>
+<img src="files/esaver.jpg" height="200" width="220" id="about_logo" />
+			</div>
+		</div>
+		<div id="members">
+			<div id="members_title">Our Team</div>
+			<div id="members_content">
+				<div class="member_display"><img src="files/4.jpg" height="200px" width="350px" class="member_pic" /><div class="role"><b>Nitin Saini</b>, Director</div></div> 
+				<div class="member_display"><img src="files/5.jpg" height="200px" width="350px" class="member_pic" /><div class="role"><b>Suruchi</b>, CEO</div></div>
+				<div class="member_display"><img src="files/2.jpg" height="200px" width="350px" class="member_pic" /><div class="role"><b>Anuj</b>, Technical Head</div></div>
+				<div class="member_display"><img src="files/3.jpg" height="200px" width="350px" class="member_pic" /><div class="role"><b>Rashmi</b>, Photographer</div></div>
+				<div class="member_display"><img src="files/1.jpg" height="200px" width="350px" class="member_pic" /><div class="role"><b>Rahul</b>, Advisor</div></div>
+				<div class="member_display"><img src="files/6.jpg" height="200px" width="350px" class="member_pic" /><div class="role"><b>Prof. Kumar Krishnen</b>, Advisor</div></div>
+			</div>
+		</div> 
+		<div id="projects">
+			<div id="projects_title">Our Initiatives</div>
+			<div id="projects_content">
+				<div class="projects_display">
+						<img src="files/slide-1.jpg" /><div class="project_disc"><p id="project_head">Pilot project story covered by Deccan Herald</p><p id="date">September 9, 2013</p><p id="project_disc">Our pilot project in two villages of Uttar Pradesh is covered by Deccan Herald. We provided free solar powered setups to 10 families in Bhajju village, Shamli district and Kamhera Village, Muzzafarnagar district free of cost. This project proved successful under the guidance of Prof. Kumar Krishen.</p></div>
+				</div>
+				<div class="projects_display">
+						<img src="files/proR.jpg" height="500" width="800" /><div class="project_disc"><p id="project_head">Project Rashmi</p><p id="date">August 25, 2013</p><p id="project_disc">A small village in Mirzapur, Uttar Pradesh electricity is like a distant dream for the inhabitants. We inquired about the problems faced by the villagers on a daily basis. On interviewing some of them, one of the problems was considered and then concluded that they pay Rs. 5 every alternate day to charge their mobile phones. At times they wait for hours for their turn. The monthly cost of charging their mobile phones approximates around Rs. 100 – 120. To address this problem, we have come up with Project RASHMI, which aims to provide solar mobile phone chargers to the villagers. The advantage being the phone is charged during the day without paying any rent to the owner of the station and also the long queues would be rejected .Every villager would have their personal charging station with them. The monthly expenditure would drop to Rs. 19 for mobile phone charging. </p></div>
+				</div>
+				<div class="projects_display">
+						<img src="files/1st.jpg" height="500" width="800" /><div class="project_disc"><p id="project_head">Pilot Project 1 - First Milestone</p><p id="date">August 12, 2013</p><p id="project_disc">oday we reached a milestone in providing green and free electricity to the world. Ten families living in dark for ages experienced the coolness of the fan and brightness in the dark. We have installed small solar setups to 10 poor families in village Bhajju, Shamli district and village Kamhera, Muzzafarnagar district of Uttar Pradesh free of cost. </p></div>
+				</div>
+				<div class="projects_display">
+						<img src="files/esaver.jpg" height="500" width="800" /><div class="project_disc"><p id="project_head">Electricity Saver Device</p><p id="date">July, 2013</p><p id="project_disc">
+A PIR based motion sensor device which detects the motion of body heat and allows the device to turn ON/OFF accordingly. Once the motion is detected, the appliance is turned ON for an adjustable delay time. If the motion is continued to be detected, the delay time extends.<br />For details about installing this device in your home, office or garden and to get a quote, email your details to support@freespirits.in<br />We have an initiative. A greener and happier world !<br />-free Spirits team </p></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="products">
+			<div id="products_title">Our Innovations</div>
+			<div id="products_content">
+				<div class="products_display"><img src="files/1.png"  height="200px" width="350px" class="product_pic" /><div class="product_disc"><b>ES-2411</b><br />
+A PIR motion sensor based device that controls one (1) light with adjustable ON time.</div></div>
+				<div class="products_display"><img src="files/2.png" height="200px" width="350px" class="product_pic" /><div class="product_disc"><b>ES-3790</b><br />
+New 'override' feature to disable the device when required.</div></div>
+				<div class="products_display"><img src="files/3.png" height="200px" width="350px" class="product_pic" /><div class="product_disc"><b>Solar Charger</b><br />
+A cheap device that can be used to charge your mobile phone anywhere under the sun.
+</div></div>
+				<div class="products_display" id="pro_mar"><img src="files/4.png" height="200px" width="350px" class="product_pic" /><div class="product_disc"><b>Hybrid Solar Charger</b><br />
+A device that multiple functions to charge your mobile phone. This is equipped with multiple facilities.</div></div>
+				<div class="products_display" id="pro_mar"><img src="files/5.png" height="200px" width="350px" class="product_pic" /><div class="product_disc"><b>Multipin Solar charger</b><br />
+A single charger with 5 different charging cords.</div></div>
+				<div class="products_display" id="pro_mar"><img src="files/61.jpg" height="200px" width="350px" class="product_pic" /><div class="product_disc"><b>Automation System</b><br />
+You say it, we make it.</div></div>
+				
+			</div>
+		</div>
+		<div id="contact">
+			<div id="contact_title">We'd Love to hear from you!</div>
+			<div id="contact_content">
+				<div id="contact_address">
+					<b>Contact No. :</b> +91-9999968769,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;+91-8861474693<br />
+					<b>E-mail :</b> we@freespirits.in<br />&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;info@freespirits.in<br />
+					<b>Registered Address:</b><br />131, Site - 2, Vikas Puri,New Delhi - 110018<br />
+					<b>Banglore Office:</b><br />Mahavir Tuscan, Near Hoodi Circle, Bangalore
+				</div>
+				<div id="contact_form">
+					<form>
+						<input type="text" placeholder="First Name" class="name" /><input type="text" placeholder="Last Name" class="name" /><br />
+						<input type="email" placeholder="E-mail" class="mail" /><br />
+						<input type="text" placeholder="Phone No." class="mail" /><br />
+						<textarea placeholder="Message" class="message"></textarea><br />
+						<input type="button" value="Submit" class="submit" />
+					</form>
+				</div>
+			</div>
+		</div>  
+    
+    </div>
+	<div id="footer">
+    	<div id="address"><b>Reach Us</b><hr />Free Spirits, Mahavir Tuscan, Hoodi Circle, Bangalore.</div>
+        <div id="copyright">Copyright &copy Free Spirits 2013</div>
+        <div id="social"><b>Connect with Us</b><hr />
+        	<a href="#" title="Like us on Facebook"><div id="fb">f</div></a>
+            <a href="#" title="Follow us on Twitter"><div id="tw">&#116;</div></a>
+            <a href="#" title="Find us on Linkedin"><div id="in">in</div></a>
+        </div>
+        
+    </div>
+</body>
+<script type="text/javascript">
+$("[id*='Btn']").stop(true).on('click',function(e){e.preventDefault();$(this).scrolld();});
+</script>
+</html>

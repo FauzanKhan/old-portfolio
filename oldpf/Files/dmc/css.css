@@ -1,0 +1,365 @@
+span{
+	height:40px;
+	width:150px;
+	display:block;
+}
+#sconnect{
+	height:30px;
+	width:40px;
+	display:block;
+}
+
+body{
+	background-image:url(dmc_files/bodybg.jpg);/*('http://i245.photobucket.com/albums/gg60/Jordanlowry/Myspace%20Backgrounds/BLACK.jpg');*/
+	color:white;
+	font-family:algerian;
+	text-align:center;
+	}
+
+#header{
+	background-color:black;
+	width:102%;
+	height:135px;
+	opacity:.5;
+	margin-left:-20px;
+	margin-top:-20px;
+	text-align:center;
+	border-bottom:1px solid #00FFFF;
+	display:inline-block;
+}
+
+
+#headimg{
+	position:absolute;
+	margin-top:-10px;
+	margin-left:-190px;
+	display:inline;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+#sign,#log{
+	display:inline;
+	float:right;
+	margin-top:20px;
+	margin-right:25px;
+	height:25px;
+	width:90px;
+	background-color:#15317E;
+	font-size:20px;
+	border-radius:5px;
+	border:1px solid #00FFFF;
+}
+#menu{
+	height:49px;
+	background-color:rgba(47, 79, 79, 0.6);
+	width:102%;
+	margin-left:-20px;
+	margin-top:20px;
+	text-align:center;
+	border:1px solid #00FFFF;
+	
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+li{
+	height:40px;
+	width:250px;
+	background-color:rgba(47, 79, 79, 0.6);
+	opacity:1;
+	text-align:center;
+	padding-top:7px;
+	border-radius:4px;
+	border:1px solid #00FFFF;
+	font-weight:bold;
+	margin:0;
+	
+}
+
+ul#navMenu li{
+	margin:0;
+	margin-left:-5px;
+	width:150px;
+	display:inline-block;
+	position:relative;
+}
+ul ul{
+	margin-top:18.5px;
+	margin-left:3px;
+	display:none;
+	position:absolute;
+	z-index:2;
+}
+
+li:hover{
+	background-color:#2B3856;
+	cursor:pointer;
+	text-shadow:1px 1px 1px black;
+}
+ul ul li:hover{
+	background-color:#2B547E;
+}
+
+#navMenu li:hover ul {
+	display:block;
+	z-index:2;
+}
+
+#slideshow{
+	margin-top:30px;
+	margin-left:-25px;
+	width:102%;
+	height:900px;
+}
+#footer{
+	text-align:center;
+	border-top:1px solid #00FFFF;
+	background-color:rgba(0, 0, 0, 0.6);
+	width:102%;
+	height:190px;
+	margin-left:-20px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bolder;
+}
+#console{
+	position:absolute;
+	margin-left:450px;
+	margin-top:40px;
+	display:block;
+}
+#buttons{
+	float:right;
+	display:inline-block;
+}
+#fb{
+	height:30px;
+	width:40px;
+	background-color:#3B5998;
+	font-weight:bold;
+	font-family:tahoma;
+	font-size:20px;
+	padding-top:5px;
+	border-radius:5px;
+	display:inline-block;
+}
+#tw{
+	height:30px;
+	width:40px;
+	background-color:#4099FF;
+	font-weight:bold;
+	font-family:tahoma;
+	font-size:20px;
+	padding-top:5px;
+	border-radius:5px;
+	display:inline-block;
+	margin-top:5px;
+}
+#crights{
+	float:right;
+	diplay:inline;
+	position:absolute;
+	margin-top:0px;
+	margin-left:1150px;
+}
+#copyrights{
+	text-align:center;
+	display:inline;
+	position:absolute;
+}
+#disc{
+	text-align:center;
+	margin-top:120px;
+	font-family:algerian;
+	}
+
+/*---------------------------------------------------Stylesheet for Pre-Order page-----------------------------------------------------*/
+#details{
+	text-align:left;
+	background-image:url('dmc_files/detailsbg.jpg');/*('http://fc02.deviantart.net/fs70/f/2012/330/4/7/devil_may_cry_fan_wallpaper_by_kaoyon-d5m8cdu.jpg');*/
+	color:#5C5858;
+	margin-left:-20px;
+	width:102%;
+	height:800px;
+	border-top:1px solid #00FFFF;
+	margin-top:30px;
+}
+#pre{
+	margin-left:50px;
+	margin-right:50px;
+	font-family:algerian;
+	font-size:25px;
+	font-weight:bold;
+}
+form{
+	margin-left:50px;
+}
+.mail , .pass{
+	height:40px;
+	width:400px;
+	border:2px solid #2C3539;
+	margin-top:20px;
+	border-radius:10px;
+	background-color:#F9F8F6;
+	color:#5C5858;
+	font-size:20px;
+	padding-left:10px;
+}
+.fname ,.lname{
+	height:40px;
+	width:400px;
+	border:2px solid #2C3539;
+	margin-top:20px;
+	border-radius:10px;
+	background-color:#F9F8F6;
+	color:#5C5858;
+	font-size:20px;
+	padding-left:10px;
+}
+select{
+	height:40px;
+	width:250px;
+	margin-top:20px;
+	border:2px solid #2C3539;
+	margin-top:20px;
+	border-radius:10px;
+	background-color:#F9F8F6;
+	color:#5C5858;
+	font-size:20px;
+	padding-left:10px;
+}
+.cbox{
+	margin-top:20px;
+}
+.submit{
+	margin-top:100px;
+	margin-left:190px;
+	height:55px;
+	width:200px;
+	border-radius:10px;
+	border:2px solid #2C3539;
+	text-align:center;
+	padding-top:0px;
+	background-color:#FFA62F;
+	font-weight:bolder;
+	color:white;
+	font-size:20px;
+}
+
+/*----------------------------------------------------------------------stylesheet for gallery----------------------------------*/
+table{
+	background-image:url('http://devilmaycry.org/wp-content/uploads/2013/01/DmC-Dante-Wallpaper-0193845.jpg');
+	margin-top:30px;
+	border-top:1px solid #00FFFF;
+	margin-left:-10px;
+	width:102%;
+	border:1px solid #00FFFF;
+}
+td{
+	width:40%;
+	height:300px;
+}
+/*----------------------------------------------------Stylesheet for characters----------------------------------------------------------*/
+#dante{
+	background-image:url('dmc_files/dantebg.jpg');/*('http://animetree.files.wordpress.com/2013/02/dmc.jpg');*/
+	width:130%;
+	margin-top:30px;
+	margin-left:-350px;
+	height:800px;
+	border-top:1px solid #00FFFF;
+}
+#dname{
+	text-align:left;
+	color:#5C5858;
+	margin-left:450px;
+	font-size:40px;
+	font-weight:bolder;
+}
+#cinfo{
+	background-color:black;
+	opacity:0.6;
+	height:500px;
+	width:650px;
+	margin-left:400px;
+	float:left;
+	border-radius:10px;
+	z-index:-1;
+	
+}
+#vergil{
+	background-image:url('dmc_files/vergilbg.jpg');/*('http://www.gamehdw.com/wp-content/uploads/2013/05/DmC-Devil-May-Cry-Vergil-Wallpaper-HD.jpg');*/
+	margin-top:30px;
+	height:800px;
+	border-top:1px solid #00FFFF;
+	width:102%;
+	margin-left:-20px;
+}
+#kat{
+	background-image:url('dmc_files/katbg.jpg');/*('http://2.bp.blogspot.com/--cL_uKglvzo/UBMLkc3_ciI/AAAAAAAACZQ/opMEz6K0qh8/s1600/kat_Devil_May_Cry_5_2560x1600.jpg');*/
+	margin-top:30px;
+	height:800px;
+	border-top:1px solid #00FFFF;
+	width:102%;
+	margin-left:-20px;
+}
+/*---------------------------------------------stylesheet for about game----------------------------------------------------------*/
+#tseries{
+	
+	background-image:url('dmc_files/tseriesbg.jpg');/*('http://4.bp.blogspot.com/_4wPOO20xFGw/TRF92xDxWdI/AAAAAAAAAFU/wqxVqdy5c3A/s1600/dmc-logo.jpg');*/
+	margin-top:30px;
+	height:800px;
+	border-top:1px solid #00FFFF;
+	width:102%;
+	margin-left:-15px;
+}
+#information{
+	background-color:rgba(0,0,0,.6);
+	height:700px;
+	width:1180px;
+	margin:50px;
+	float:left;
+	border-radius:10px;
+	z-index:-1;
+}
+#story{
+	background-image:url('dmc_files/storybg.jpg');/*('http://1.bp.blogspot.com/-HHWBDMn_xWc/UQUgaxhWtdI/AAAAAAAAADw/FNbXHv_W4LY/s1600/dmc-devil-may-cry-wallpaper-in-hd.jpg');*/
+	margin-top:30px;
+	height:800px;
+	border-top:1px solid #00FFFF;
+	width:102%;
+	margin-left:-15px;
+}
+/*-------------------------------------Stylesheet for log in page--------------------------------------------------------------*/
+#login{
+	background-image:url('dmc_files/loginbg.jpg');
+	height:800px;
+	width:102%;
+	margin-left:-10px;
+	margin-top:30px;
+	border-top:1px solid #00FFFF;;
+	text-align:center;
+}
+.submit{
+	margin-top:30px;
+	height:40px;
+	width:140px;
+	font-size:20px;
+	font-family:algerian;
+}
+.submit:hover{
+	cursor:pointer;
+}
+/*----------------------------------------------------stylesheet for sign up page-------------------------------------------------*/
+#signup{
+	background-image:url('dmc_files/signupbg.png');
+	height:800px;
+	width:102%;
+	margin-left:-10px;
+	margin-top:30px;
+	border-top:1px solid #00FFFF;;
+	text-align:center;
+}
